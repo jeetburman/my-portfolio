@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Portfolio</title>
+    <link rel="icon" href="data:,"> <!--Code to fix favicon error -->
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./images/ME-portrait.jpg" type="image/x-icon">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                 <img src="./images/logo.jpg" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Articles</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+
+                <p>Aspiring <br> Software and Machine Learning Engineer</p>
+                <h1>Hi, I'm <span> Jeet </span>Burman<br>from Calcutta</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/ME-portrait.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Enthusiastic engineering student with a strong foundation in technology and a fervent commitment to continuous learning. Eager to embark on a professional journey, I bring a fresh perspective and a relentless passion for staying abreast of industry advancements. Dedicated to honing my skills and contributing to innovative solutions, I am poised to make a meaningful impact in the dynamic world of technology.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tabs" id="skills">
+                        <ul>
+                            <li><span>Python Programming Language <br></span>Numpy,Matplotlib,Pandas</li>
+                            <li><span>Java Programming Language</span> <br>Basics of Data Structures and Algorithms</li>
+                            <li><span>Web-Development <br></span>HTML CSS JavaScript</li>
+                            <li><span>AI-Image generation</span><br>Dall-E prompt writing,Face-Hugging, Face-Swap</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="experience">
+                        <ul>
+                            <li><span>Web-Development <br></span>HTML CSS JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="education">
+                        <ul>
+                            <li><span>2023-27</span><br>B.Tech from Techno India</li>
+                            <li><span>2020-2022</span><br>11th-12th from NIOS</li>
+                            <li><span>2018-2019</span><br>9th-10th from DPS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Services -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Articles</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-solid fa-code"></i>
+                <h2>Web-Development</h2>
+                <p>Web development involves creating and designing websites by combining HTML for structure, CSS for styling, and JavaScript for interactivity. HTML defines content, CSS enhances presentation, and JavaScript adds dynamic features, collectively enabling the creation of engaging and responsive web pages. For example this portfolio website.</p>
+                <a href="#" target="_blank">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-solid fa-crop"></i>
+                <h2>Data Structures</h2>
+                <p>Data structures organize and store data efficiently, while algorithms provide step-by-step instructions for solving problems. Together, they form the foundation of computer science, optimizing data manipulation and computation for diverse applications.</p>
+                <a href="#" target="_blank">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-brands fa-app-store"></i>
+                <h2>Image generation</h2>
+                <p>AI technologies like MidJourney and DALL-E leverage advanced machine learning models. MidJourney focuses on natural language understanding, while DALL-E generates diverse and creative images using innovative generative techniques, showcasing the evolving landscape of artificial intelligence applications.</p>
+                <a href="#" target="_blank">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./images/tic-tac-toe-7737546_640.jpg"alt="">
+                <div class="layer">
+                    <h3>Tic-Tac-Toe-game</h3>
+                    <p>Javascript practice project</p>
+                    <a href="https://jeetburman.github.io/Tic-Tac-Toe-game/" target="_blank">
+                        <i class="fas fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/netflix-banner.jpg" alt="">
+                <div class="layer">
+                    <h3>Netflix's Clone</h3>
+                    <p>It's the raw frontend clone of Netflix</p>
+                    <a href="https://jeetburman.github.io/Netflixclone/" target="_blank">
+                        <i class="fas fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/spotify-banner.webp" alt="">
+                <div class="layer">
+                    <h3>Spotify Clone</h3>
+                    <p>It's the raw frontend clone of Spotify</p>
+                    <a href="https://jeetburman.github.io/Spotifyclone/" target="_blank">
+                        <i class="fas fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-solid fa-paper-plane"></i>burman.jeet06@myyahoo.com</p>
+                <p><i class="fas fa-solid fa-square-phone"></i>+91-9330732038</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/jeet-burman-253921285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fas fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/jeet.burman.94?mibextid=ZbWKwL" target="_blank"><i class="fas fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/_burman.jeet?igsh=MTRrbGIwbnlmMXc3Mw==" target="_blank"><i class="fas fa-brands fa-instagram"></i></a>
+                    <a href="https://www.snapchat.com/add/noisyboyjeet?share_id=OxiJMiygQfQ&locale=en-US" target="_blank"><i class="fas fa-brands fa-snapchat"></i></a>
+                </div>
+                <a href="#" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name">
+                    <input type="email" name="Email" placeholder="Your E-Mail">
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy Jeet. Made using raw HTML CSS & JavaScript and a hell lot of`<i class="fas fa-solid fa-clock"></i> hardwork</p>
+        <p>This is a demo website so not all of the links work. This was made only to showcase my web-dev skills and for some personal practice & creativity. <i class="fa-solid fa-face-smile"></i> </p>
+    </div>
+</div>
+<script src="porfolio.js"></script>   
+</body>
+</html>
+ 
